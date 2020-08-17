@@ -1,0 +1,13 @@
+slack:
+  token: "xoxb- ---"
+  signingSecret: "---"
+  verificationToken: "---"
+
+db:
+  path: "kudosaurus.db"
+
+server:
+  port: 3000
+
+settings:
+  maxKudos: 10
