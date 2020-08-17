@@ -20,7 +20,7 @@ You're good to go. It's possible that app home tab will fail if you don't `/kudo
 To do
 -----
 
-[ ] better structure
-[ ] drop nlopes/slack lib - it's not that useful when you're not using RTM and its API coverage isn't :100:
-[ ] admin's "preview all kudos" modal - some work has been done, but it's super incomplete
-[ ] additional functionality
+- [ ] better structure
+- [ ] drop nlopes/slack lib - it's not that useful when you're not using RTM and its API coverage isn't :100:
+- [ ] admin's "preview all kudos" modal - some work has been done, but it's super incomplete
+- [ ] additional functionality
