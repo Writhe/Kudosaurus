@@ -119,6 +119,9 @@ func (s *CommandServer) handlePublishKudos(
 	)
 
 	res.WriteHeader(http.StatusOK)
+
+	s.store.PublishKudos(slackUser.TeamID)
+	s.publishView(s.getHomeView(slackUser.ID, slackUser.TeamID))
 }
 
 func (s *CommandServer) handleAction(res http.ResponseWriter, req *http.Request) {

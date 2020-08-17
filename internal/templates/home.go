@@ -34,6 +34,19 @@ func Kudo(kudo kudosaurus.Kudo) string {
 
 // KudoList - list of kudos
 func KudoList(kudos []kudosaurus.Kudo) string {
+	if len(kudos) == 0 {
+		return `
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Nothing to show here.",
+				"emoji": false
+			}
+		}
+		`
+	}
+
 	result := []string{}
 	for _, kudo := range kudos {
 		result = append(result, Kudo(kudo))

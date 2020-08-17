@@ -48,4 +48,5 @@ type Store interface {
 	SetAdmins(teamID string, adminIDs []string)
 	GetAdmins(teamID string) []string
 	CheckAdmin(teamID string, userID string) (isAdmin bool, isFound bool)
+	PublishKudos(teamID string)
 }
